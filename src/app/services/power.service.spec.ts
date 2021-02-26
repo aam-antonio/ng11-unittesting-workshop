@@ -19,7 +19,7 @@ describe('PowerService', () => {
     expect(response).toBe(4);
   });
 
-  it('should return not be 0 when base is 3 and exponent is 3', () => {
+  it('should not return 0 when base is 3 and exponent is 3', () => {
     const response = service.power(3, 3);
     expect(response).not.toBe(0);
   });
