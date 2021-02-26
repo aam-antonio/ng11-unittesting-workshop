@@ -19,18 +19,18 @@ describe('PowerService', () => {
     expect(response).toBe(4);
   });
 
-  it('should return NaN when base is 2 and exponent is not 2', () => {
+  it('should return 8 when base is 2 and exponent is 3', () => {
     const response = service.power(2, 3);
-    expect(response).toBeNaN();
+    expect(response).toBe(8);
   });
 
-  it('should return NaN when base is not 2 and exponent is 2', () => {
+  it('should return 8 when base is 3 and exponent is 2', () => {
     const response = service.power(3, 2);
-    expect(response).toBeNaN();
+    expect(response).toBe(8);
   });
 
-  it('should return NaN when base is not 2 and exponent is not 2', () => {
+  it('should return 27 when base is 3 and exponent is 3', () => {
     const response = service.power(3, 3);
-    expect(response).toBeNaN();
+    expect(response).toBe(27);
   });
 });
